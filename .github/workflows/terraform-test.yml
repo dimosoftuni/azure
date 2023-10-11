@@ -6,7 +6,7 @@ on:
 
 jobs:
   terraform-test:
-    name: 'Terraform'
+    name: 'Terraform Test'
     runs-on: ubuntu-latest
     environment: production
 
