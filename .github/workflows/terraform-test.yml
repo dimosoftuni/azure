@@ -3,6 +3,11 @@ name: 'Terraform-Test'
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      custom_param:
+        description: 'Custom Parameter'
+        required: false
 
 jobs:
   terraform-test:

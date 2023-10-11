@@ -3,6 +3,11 @@ name: 'Terraform-Plan-Apply'
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      custom_param:
+        description: 'Custom Parameter'
+        required: false
 
 env:
   ARM_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
